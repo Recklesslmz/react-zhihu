@@ -4,17 +4,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import App from './components/App'
-import About from './components/About'
-import NotFound from './components/NotFound'
+import Member from './pages/Member/member'
+import MemberDetail from './pages/MemberDetail/MemberDetail'
 
 
 const Routes =() =>(
     <Router>
         <div>
-        <Route path='/App' component={App}/>
-        <Route path='/about' component={About}/>
-        <Route path='/NotFound' component={NotFound}/>
+        <Route exact path='/' component={Member}/>
+        <Route path='/MemberDetail' component={MemberDetail}/>
         </div>
     </Router>
 )

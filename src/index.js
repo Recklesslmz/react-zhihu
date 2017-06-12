@@ -9,5 +9,7 @@ import ReactDOM from 'react-dom';
 // import FourOFour from './404Example'
 import Routes from './routes'
 import './index.css';
+const app = document.getElementsByTagName('body')[0]
+app.style.background= '#ebeef0'
 
 ReactDOM.render(<Routes/>, document.getElementById('root'))
